@@ -1,0 +1,81 @@
+
+:root {
+    --contentWidth: 1280px;
+    --shadowSize: 0.2rem;
+    --contentPadding: 2rem;
+    --mainColorDarck: #413F54;
+    --mainColorWhite: #EFEFEF;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-Regular.ttf")
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: Inter, sans-serif;
+}
+
+header {
+    padding: 10px 80px;
+    background-color: var(--mainColorDarck);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--mainColorWhite);
+}
+
+
+header .cur-time-widget{
+    display: flex;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--mainColorWhite);
+}
+
+header .profile-widget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .profile-widget .info{
+    margin-right: 40px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--mainColorWhite);
+}
+
+header .profile-widget .info div{
+    margin-bottom: 3px;
+}
+
+header .profile-widget .info .job-title{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #EFEFEF;
+}
